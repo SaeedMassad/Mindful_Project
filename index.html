@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">
+
+
+  <title>Mindful Minis</title>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.6.0/firebase-storage.js"></script>
+
+  <script type="module" src="FireBaseConfig.js"></script>
+
+</head>
+
+<body>
+
+  <header class = "header">
+
+ 
+
+    <a href="#" class="logo">Mindful Minis</a>
+
+ 
+
+    <!--Navigation Bar Options-->
+
+ 
+
+    <nav class="navbar">
+
+      <a href="#" class="navbar_item">Home</a>
+
+      <a href="#journey" class="navbar_item">The Journey</a>
+
+      <a href="#achievement" class="navbar_item">Achievements</a>
+
+      <a href="#about" class="navbar_item">About & FAQ</a>
+
+    </nav>
+
+ 
+
+    <a href="#about" class="login">Hello!</a>
+
+ 
+
+  </header>
+
+  <div class="main_body">
+
+ 
+
+    <div class="img_1">
+
+      <img src="img/website_image_1.png" alt="landing image" class="img_1">
+
+    </div>
+
+ 
+
+    <div class="landing_content">
+
+      <h1 class="title">Mindful Minis</h1>
+
+      <h3>Meditate With Us Today</h3>
+
+      <p>Mindful Minis aims to make meditation and mindfulness practices fun and rewarding for folks of all ages.</p>
+
+
+    </div>
+
+ 
+
+    <div class="course_content">
+      <section id="journey">
+        <h1 class="title">Journey</h1>
+      </section>
+
+
+ 
+
+      <div class="item_1">
+
+        <a href="#" onclick="togglePopup1()" class="journey_item_1">1</a>
+
+        <h3 class="item_1_title">Introduction</h3>
+
+        <p class="item_1_desc">An Introduction To Mindful Minis And What Meditation Is About.</p>
+
+      </div>
+
+ 
+
+      <div class="item_2">
+
+        <a href="#" onclick="togglePopup2()" class="journey_item_2">2</a>
+
+        <h3 class="item_2_title">Learning to sit</h3>
+
+        <p class="item_2_desc">Dedicated to teach the user to sit down and be able to control their thoughts while focusing on their breath.</p>
+
+      </div>
+
+ 
+
+      <div class="item_3">
+
+        <a href="#" onclick="togglePopup3()" class="journey_item_3">3</a>
+
+        <h3 class="item_3_title">Outside Thoughts</h3>
+
+        <p class="item_3_desc">Teaching users to focus on surroundings without letting any internal thoughts or emotions interrupt it.
+        </p>
+
+      </div>
+
+ 
+
+      <div class="item_4">
+
+        <a href="#" onclick="togglePopup4()" class="journey_item_4">4</a>
+
+        <h3 class="item_4_title">Coming soon</h3>
+
+        <p class="item_4_desc">Our team of mindful creators is working on something special just for you.</p>
+
+      </div>
+
+ 
+
+      <div class="item_5">
+
+        <a href="#" onclick="togglePopup5()" class="journey_item_5">5</a>
+
+        <h3 class="item_5_title">Coming soon</h3>
+
+        <p class="item_5_desc">Our team of mindful creators is working on something special just for you.</p>
+
+      </div>
+
+ 
+
+      <div class="item_6">
+
+        <a href="#" onclick="togglePopup6()" class="journey_item_6">6</a>
+
+        <h3 class="item_6_title">Coming soon</h3>
+
+        <p class="item_6_desc">Our team of mindful creators is working on something special just for you.</p>
+
+      </div>
+
+ 
+
+      <div class="item_7">
+
+        <a href="#" onclick="togglePopup7()" class="journey_item_7">7</a>
+
+        <h3 class="item_7_title">Coming soon</h3>
+
+        <p class="item_7_desc">Our team of mindful creators is working on something special just for you.</p>
+
+      </div>
+
+ 
+
+      <div class="item_8">
+
+        <a href="#" onclick="togglePopup8()" class="journey_item_8">8</a>
+
+        <h3 class="item_8_title">Coming soon</h3>
+
+        <p class="item_8_desc">Our team of mindful creators is working on something special just for you.</p>
+
+      </div>
+
+ 
+
+      <div class="item_9">
+
+        <a href="#" onclick="togglePopup9()" class="journey_item_9">9</a>
+
+        <h3 class="item_9_title">Coming soon</h3>
+
+        <p class="item_9_desc">Our team of mindful creators is working on something special just for you.</p>
+
+      </div>
+
+ 
+
+      <div class="item_10">
+
+        <a href="#" onclick="togglePopup10()" class="journey_item_10">10</a>
+
+        <h3 class="item_10_title">Coming soon</h3>
+
+        <p class="item_10_desc">Our team of mindful creators is working on something special just for you.</p>
+
+      </div>
+
+ 
+
+    </div>
+
+ 
+
+    <div class="achievement_content">
+      <section id="achievement">
+        <h1 class="title">Achievements</h1>
+      </section>
+      
+
+ 
+
+      <div class="achievement_book">
+
+        <img src="img/achievement_collection.jpg" alt="achievement book">
+
+ 
+
+      </div>
+
+    </div>
+
+ 
+
+    <div class="about_content">
+      <section id="about">
+        <h1 class="title">About & FAQ</h1>
+      </section>
+
+
+ 
+
+      <div class="dropdown_faq">
+
+ 
+
+        <ul class = "accordion">
+
+ 
+
+          <li>
+
+ 
+
+            <label for="first" class="question_name">What Is Mindful Minis?<span>&#x3e;</span></label>
+
+            <input type="radio" name="accordion" id="first" class="faq_button" checked>
+
+            <div class="content">
+
+              <p>Mindful Minis is a super cool online meditation adventure made for awesome folks aged 5 to 15!</p>
+
+            </div>
+
+ 
+
+          </li>
+
+          <li>
+
+ 
+
+            <label for="second" class="question_name">What Do I Do In Mindful Minis?<span>&#x3e;</span></label>
+
+            <input type="radio" name="accordion" id="second" class="faq_button" checked>
+
+            <div class="content">
+
+              <p>Well, you <span class="bolder_text">complete meditation sessions</span>! We've got this amazing level-up system that unlocks brand new meditation missions when you complete the ones you're on. And guess what? <br>You earn <span class="bolder_text">cool achievements in the form of stickers</span> as you complete missions!</p>
+
+              <br>But here's the real deal with Mindful Minis: We're all about <span class="bolder_text">helping you become a mindfulness ninja.</span><br>See, in today's world, it's all about quick and flashy stuff on screens, and that's cool, but it doesn't help you grow. <br>That's where we step in! We want to show you how to use your screen time for <span class="bolder_text">something awesome</span> like practicing mindfulness.
+
+            </div>
+
+           
+
+          </li>
+
+          <li>
+
+ 
+
+            <label for="third" class="question_name">What Makes Mindful Minis Different?<span>&#x3e;</span></label>
+
+            <input type="radio" name="accordion" id="third" class="faq_button" checked>
+
+            <div class="content">
+
+              <p>We're not like boring grown-up mindfulness stuff. We're here for you <span class="bolder_text">with cool characters, friendly voices and adventures</span> that make learning mindfulness feel like a fun story. <br>So hop on board, and <span class="bolder_text">let's have a blast on this mindfulness journey together!</span> 🚀💫</p>
+
+            </div>
+
+           
+
+          </li>
+
+          <li>
+
+ 
+
+            <label for="fourth" class="question_name">How Can I Contact You?<span>&#x3e;</span></label>
+
+            <input type="radio" name="accordion" id="fourth" class="faq_button" checked>
+
+            <div class="content">
+
+ 
+
+              <div class="developers">
+
+ 
+
+                <div class="developer-image">
+
+                  <img src="img/rohithportrait.jpg" alt="Developer 1">
+
+                  <p class="developer-name">Rohith Vimal</p>
+
+                </div>
+
+                <div class="developer-image">
+
+                  <img src="img/nihaportrait.jpg" alt="Developer 2">
+
+                  <p class="developer-name">Niha Salman</p>
+
+                </div>
+
+                <div class="developer-image">
+
+                  <img src="img/saeedportrait.jpg" alt="Developer 3">
+
+                  <p class="developer-name">Saeed Masaad</p>
+
+                </div>
+
+ 
+
+              </div>
+
+ 
+
+              <p>We'd love to hear from you! Email us at <span class="bolder_text">email</span></p>
+
+ 
+
+            </div>
+
+           
+
+          </li>
+
+ 
+
+        </ul>
+
+ 
+
+      </div>
+
+ 
+
+    </div>
+
+ 
+
+  </div>
+
+ 
+
+  <div class="popup" id="popup1">
+
+ 
+
+    <div class="overlay"></div>
+
+    <div class="popup_content">
+
+ 
+
+      <div class="close_btn"  onclick="togglePopup1()">&times;</div>
+
+      <h1>Session 1</h1>
+
+      <p>This session is an introduction to mindfulness and meditation.</p>
+
+      <button id="playButton1" class="play_btn" onclick="toggleAudio()">&#9658;</button>
+   
+    </div>
+
+ 
+
+  </div>
+
+  <div class="popup" id="popup2">
+
+   
+
+    <div class="overlay"></div>
+
+    <div class="popup_content">
+
+ 
+
+      <div class="close_btn"  onclick="togglePopup2()">&times;</div>
+
+      <h1>Session 2</h1>
+
+      <p>This session is about learning sit and control your thoughts.</p>
+
+      <button id="playButton2" class="play_btn" onclick="toggleAudio2()">&#9658;</button>
+
+ 
+
+    </div>
+
+ 
+
+  </div>
+
+  <div class="popup" id="popup3">
+
+   
+
+    <div class="overlay"></div>
+
+    <div class="popup_content">
+
+ 
+
+      <div class="close_btn"  onclick="togglePopup3()">&times;</div>
+
+      <h1>Session 3</h1>
+
+      <p>This session is about focusing on surrounding without your thoughts interrupting it.</p>
+
+      <button id="playButton3" class="play_btn" onclick="toggleAudio3()">&#9658;</button>
+
+ 
+
+    </div>
+  </div>
+
+  <div class="popup" id="popup4">
+
+  
+
+    <div class="overlay"></div>
+
+    <div class="popup_content">
+
+
+
+      <div class="close_btn"  onclick="togglePopup4()">&times;</div>
+
+      <h1>Session 4</h1>
+
+      <p>This session is /*content here*/.</p>
+
+      <button class="play_btn">&#9658;</button>
+
+
+
+    </div>
+
+
+
+  </div>
+
+  <div class="popup" id="popup5">
+
+  
+
+    <div class="overlay"></div>
+
+    <div class="popup_content">
+
+
+
+      <div class="close_btn"  onclick="togglePopup5()">&times;</div>
+
+      <h1>Session 5</h1>
+
+      <p>This session is /*content here*/.</p>
+
+      <button class="play_btn">&#9658;</button>
+
+
+
+    </div>
+
+
+
+  </div>
+
+  <div class="popup" id="popup6">
+
+  
+
+    <div class="overlay"></div>
+
+    <div class="popup_content">
+
+
+
+      <div class="close_btn"  onclick="togglePopup6()">&times;</div>
+
+      <h1>Session 6</h1>
+
+      <p>This session is /*content here*/.</p>
+
+      <button class="play_btn">&#9658;</button>
+
+
+
+    </div>
+
+
+
+  </div>
+
+  <div class="popup" id="popup7">
+
+  
+
+    <div class="overlay"></div>
+
+    <div class="popup_content">
+
+
+
+      <div class="close_btn"  onclick="togglePopup7()">&times;</div>
+
+      <h1>Session 7</h1>
+
+      <p>This session is /*content here*/.</p>
+
+      <button class="play_btn">&#9658;</button>
+
+
+
+    </div>
+
+
+
+  </div>
+
+  <div class="popup" id="popup8">
+
+  
+
+    <div class="overlay"></div>
+
+    <div class="popup_content">
+
+
+
+      <div class="close_btn"  onclick="togglePopup8()">&times;</div>
+
+      <h1>Session 8</h1>
+
+      <p>This session is /*content here*/.</p>
+
+      <button class="play_btn">&#9658;</button>
+
+
+
+    </div>
+
+
+
+  </div>
+
+  <div class="popup" id="popup9">
+
+  
+
+    <div class="overlay"></div>
+
+    <div class="popup_content">
+
+
+
+      <div class="close_btn"  onclick="togglePopup9()">&times;</div>
+
+      <h1>Session 9</h1>
+
+      <p>This session is /*content here*/.</p>
+
+      <button class="play_btn">&#9658;</button>
+
+
+
+    </div>
+
+
+
+  </div>
+
+  <div class="popup" id="popup10">
+
+  
+
+    <div class="overlay"></div>
+
+    <div class="popup_content">
+
+
+
+      <div class="close_btn"  onclick="togglePopup10()">&times;</div>
+
+      <h1>Session 10</h1>
+
+      <p>This session is /*content here*/.</p>
+
+      <button class="play_btn">&#9658;</button>
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+</div>
+
+
+
+<script>
+
+
+
+  function togglePopup1() {
+    document.getElementById('popup1').classList.toggle('active');
+
+  }
+
+  function togglePopup2() {
+
+    document.getElementById('popup2').classList.toggle('active');
+
+  }
+
+  function togglePopup3() {
+
+    document.getElementById('popup3').classList.toggle('active');
+
+  }
+
+  function togglePopup4() {
+
+    document.getElementById('popup4').classList.toggle('active');
+
+  }
+
+  function togglePopup5() {
+
+    document.getElementById('popup5').classList.toggle('active');
+
+  }
+
+  function togglePopup6() {
+
+    document.getElementById('popup6').classList.toggle('active');
+
+  }
+
+  function togglePopup7() {
+
+    document.getElementById('popup7').classList.toggle('active');
+
+  }
+
+  function togglePopup8() {
+
+    document.getElementById('popup8').classList.toggle('active');
+
+  }
+
+  function togglePopup9() {
+
+    document.getElementById('popup9').classList.toggle('active');
+
+  }
+
+  function togglePopup10() {
+
+    document.getElementById('popup10').classList.toggle('active');
+
+  }
+  
+</script>
+
+
+</body>
+
+</html>
+
