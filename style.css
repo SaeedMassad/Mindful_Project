@@ -12,7 +12,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f0faff;
+  background-image: url(/img/Loginimage.jpg);
+  background-size: cover;
 }
 
 .wrapper {
@@ -93,11 +94,6 @@ form input {
   box-shadow: 0 1px 0 #ddd;
 }
 
-form .checkbox {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 
 .checkbox input[type="checkbox"] {
   height: 16px;
@@ -132,4 +128,21 @@ form input[type="submit"] {
   background: #4d00b3;
   color: #fff;
   border: none;
+}
+
+.back button{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #4d00b3;
+  color: white;
+  border-width: 0;
+}
+
+.back button:hover{
+  color: black;
 }
